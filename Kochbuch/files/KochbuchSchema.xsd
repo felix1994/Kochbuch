@@ -5,11 +5,11 @@
 
 <xs:complexType name="KochbuchType">
 	<xs:sequence>
-		<xs:element name="Rezepte" type="RezepteType" />
+		<xs:element name="Rezepte" type="RezepteTyp" />
 	</xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="RezepteType">
+<xs:complexType name="RezepteTyp">
 	<xs:sequence>
 		<xs:element name="Rezept" type="RezeptTyp" />
 	</xs:sequence>
