@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Kochbuch" type="KochbuchType" />
+
+<xs:complexType name="KochbuchType">
+	<xs:sequence>
+		<xs:element name="Rezepte" type="RezepteType" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RezepteType">
+	<xs:sequence>
+		<xs:element name="Rezept" type="RezeptTyp" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RezeptTyp">
+	<xs:sequence>
+		<xs:element name="Name" type="xs:string" />
+		<xs:element name="Beschreibung" type="xs:string" />
+		<xs:element name="Anleitung" type="xs:string" />
+		<xs:element name="Schwierigkeit" type="xs:string" />
+		<xs:element name="Dauer" type="xs:string" />
+		<xs:element name="Typ" type="xs:string" />
+		<xs:element name="Zutaten" type="ZutatenTyp" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ZutatenTyp">
+	<xs:sequence>
+		<xs:element name="Zutat" type="ZutatTyp" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ZutatTyp">
+	<xs:sequence>
+		<xs:element name="Name" type="xs:string" />
+		<xs:element name="Anzahl" type="xs:string" />
+		<xs:element name="Masseinheit" type="xs:string" />
+	</xs:sequence>
+</xs:complexType>
+
+</xs:schema> 
+
+

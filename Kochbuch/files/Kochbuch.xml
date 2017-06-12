@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Kochbuch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KochbuchSchema.xsd">
+	<Rezepte>
+		<Rezept>
+			<Name>Beispielrezept1</Name>
+			<Beschreibung>A</Beschreibung>
+			<Anleitung>B</Anleitung>
+			<Schwierigkeit>C</Schwierigkeit>
+			<Dauer>D</Dauer>
+			<Typ>E</Typ>
+			<Zutaten>
+				<Zutat>
+					<Name>Z1</Name>
+					<Anzahl>23</Anzahl>
+					<Masseinheit>gr</Masseinheit>
+				</Zutat>
+			</Zutaten>
+		</Rezept>
+	</Rezepte>
+</Kochbuch>
