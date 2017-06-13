@@ -2,7 +2,7 @@
 <Kochbuch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KochbuchSchema.xsd">
 	<Rezepte>
 		<Rezept>
-			<Name>Beispielrezept1</Name>
+			<RezeptName>Beispielrezept1</RezeptName>
 			<Beschreibung>A</Beschreibung>
 			<Anleitung>B</Anleitung>
 			<Schwierigkeit>C</Schwierigkeit>
@@ -10,8 +10,38 @@
 			<Typ>E</Typ>
 			<Zutaten>
 				<Zutat>
-					<Name>Z1</Name>
-					<Anzahl>23</Anzahl>
+					<ZutatName>Z1</ZutatName>
+					<Menge>23</Menge>
+					<Masseinheit>gr</Masseinheit>
+				</Zutat>
+			</Zutaten>
+		</Rezept>
+		<Rezept>
+			<RezeptName>Yolo</RezeptName>
+			<Beschreibung>A</Beschreibung>
+			<Anleitung>B</Anleitung>
+			<Schwierigkeit>C</Schwierigkeit>
+			<Dauer>D</Dauer>
+			<Typ>E</Typ>
+			<Zutaten>
+				<Zutat>
+					<ZutatName>Z1</ZutatName>
+					<Menge>23</Menge>
+					<Masseinheit>gr</Masseinheit>
+				</Zutat>
+			</Zutaten>
+		</Rezept>
+		<Rezept>
+			<RezeptName>Was geht</RezeptName>
+			<Beschreibung>A</Beschreibung>
+			<Anleitung>B</Anleitung>
+			<Schwierigkeit>C</Schwierigkeit>
+			<Dauer>D</Dauer>
+			<Typ>E</Typ>
+			<Zutaten>
+				<Zutat>
+					<ZutatName>Z1</ZutatName>
+					<Menge>23</Menge>
 					<Masseinheit>gr</Masseinheit>
 				</Zutat>
 			</Zutaten>

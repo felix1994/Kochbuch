@@ -2,21 +2,20 @@ package ui;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.ToolItem;
+import main.SaxParser;
+import model.Kochbuch;
+
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 
 public class MainWindow {
-
+	
+	
+	public static Kochbuch kochbuch;
 	protected Shell shell;
 
 	/**
@@ -25,6 +24,11 @@ public class MainWindow {
 	 */
 	public static void main(String[] args) {
 		try {
+			
+			//Kochbuchdatei einlesen
+			kochbuch = SaxParser.parserDocument(); 
+			
+			//Fenster öffnen
 			MainWindow window = new MainWindow();
 			window.open();
 		} catch (Exception e) {
@@ -67,8 +71,7 @@ public class MainWindow {
         subMenuItem2.addSelectionListener(new SelectionAdapter() {
         	@Override
         	public void widgetSelected(SelectionEvent e) {
-        		System.out.println("hier");
-        		new NeuesGericht(shell, SWT.NONE);
+        		new NeuesGericht(shell, SWT.NONE, kochbuch);
         		shell.layout();
         		
         	}
